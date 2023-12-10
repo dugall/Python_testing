@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<body>
+
+<!--<ul>
+  {% for x in mymembers %}
+    <li>{{ x.firstname }}</li>
+  {% endfor %}
+</ul>-->
+
+{% for x in fruits %}
+  <h1>{{ x }}</h1>
+{% endfor %}
+
+<p>In myfirst.css you can see what the stylesheet looks like.</p>
+
+<!--<p>In views.py you can see how to import and fetch members from the database.</p>-->
+
+</body>
+</html>
+
+<!--{% with firstname="Tobias" %}-->
+<!--<h1>Hello {{ firstname }}, how are you?</h1>-->
+<!--{% endwith %}-->
+
+<!--{% for x in fruits %}
+  <h1>Hello {{ firstname }}, how are you?</h1>
+{% endfor %}-->
+
+<!--{% if greeting == 1 %}
+  <h1>Hello</h1>
+{% else %}
+  <h1>Bye</h1>
+{% endif %} -->
+
